@@ -6,6 +6,7 @@ A golang micro-libary to make concurrent http request to your server
 2) Determine the number of request to be made.
 3) Specify the concurrency i.e parallelism of the requests.
 
+```golang
 	url := "http://localhost:8080/"
 	req, _ := http.NewRequest("GET", url, nil)
     numberOfRequests := 100000
@@ -25,3 +26,4 @@ A golang micro-libary to make concurrent http request to your server
         httpResponse = res.HttpRespone()
         error = res.Error()
     }
+```
